@@ -5,7 +5,7 @@ import { Module } from "../components/Module"
 import { useAppSelector } from "../store"
 
 export function Player() {
-  const modules = useAppSelector((state) => state.player.courses.modules)
+  const modules = useAppSelector((state) => state.player.course.modules)
 
   return (
     <div className="h-screen bg-zinc-950 text-zinc-50 flex justify-center items-center">

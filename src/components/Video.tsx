@@ -6,7 +6,7 @@ export const Video = () => {
     const { currentModuleIndex, currentLessonIndex } = state.player
 
     const currentLessonData =
-      state.player.courses.modules[currentModuleIndex].lessons[
+      state.player.course.modules[currentModuleIndex].lessons[
         currentLessonIndex
       ]
 

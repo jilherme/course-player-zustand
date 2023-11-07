@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 const playerSlice = createSlice({
   name: "player",
   initialState: {
-    courses: {
+    course: {
       modules: [
         {
           id: "1",
