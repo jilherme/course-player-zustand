@@ -1,3 +1,7 @@
+# React + Redux video player 
+
+This project is a study on Redux, redux-toolkit, flux pattern. It receives a course with a list of lessons and each lesson contains an array of videos.
+
 
 ## Run Locally
 
