@@ -1,11 +1,10 @@
-import { useAppSelector } from "../store"
-import { useCurrentLesson } from "../store/slices/player"
+import { useCurrentLesson, useStore } from "../zustands-store"
 
 export const Header = () => {
   const { currentModule, currentLesson } = useCurrentLesson()
-  const isCourseLoading = useAppSelector((state) => state.player.isLoading)
+  const isLoading = useStore((store) => store.isLoading)
 
-  if (isCourseLoading) {
+  if (isLoading) {
     // TODO: Add skeleton loading https://tailwindcss.com/docs/animation#pulse
     return <h1 className="text-2xl font-bold">Carregando...</h1>
   }
